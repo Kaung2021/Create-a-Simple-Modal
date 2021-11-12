@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lora:ital@1&family=Noto+Serif+Display:wght@300&family=Open+Sans:wght@400;500&family=Oswald&family=Playfair+Display+SC:wght@700&family=Playfair+Display:ital,wght@0,500;1,500&family=Raleway:wght@300&family=Roboto+Condensed&family=Spectral+SC&family=Yuji+Syuku&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap');
+ body{
+      margin: 0;
+      padding: 0;
+        background-image: linear-gradient(to right,#EFEFBB,#D4D3DD);
+      font-family: 'Yuji Syuku', serif;
+ }
+     /*Style to button*/
+     #btn {
+         position: relative;
+         top: 50px;
+         left: 50px;
+          color: whitesmoke;
+          background-color: lightslategray;
+          padding: 15px;
+          border: none;
+          border-radius: 5px;
+            text-transform: uppercase;
+            transition: 0.4s;
+            cursor: pointer;
+     }
+      #btn:hover{
+           background-color: rgb(42, 55, 66);
+           margin-left: 12px;
+      }
+      /*Style to content*/
+        .modal {
+             position: absolute;
+              left: 50%;
+              top: 50%;
+               transform: translate(-50%,-50%);
+             background-color: black;
+             color: whitesmoke;
+             width: 300px;
+             padding: 20px;
+             cursor: pointer;
+             /*Adding Animation*/
+                 animation: animate 0.4s;
+                 -webkit-animation: animate 0.4s;
+        }
+        /*Style to close-button*/
+        .closeBtn{
+             position: absolute;
+             right: 12px;
+             top: 0px;
+             font-size: 25px;
+             transition: 0.3s;
+        }
+        .closeBtn:hover{
+             color: gray;
+        }
+         @keyframes animate {
+              from{
+                   top: -50%;
+                   opacity: 0;
+              }
+              to{
+                  top: 0;
+                  opacity: 1;
+              }
+         }
+        
